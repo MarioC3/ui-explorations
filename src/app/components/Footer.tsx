@@ -7,8 +7,8 @@ export default function Footer() {
 	const date = new Date()
 	const year = date.getFullYear()
 	return (
-		<footer className="flex items-end justify-between gap-2">
-			<div className="flex flex-col gap-2">
+		<footer className="flex flex-col items-center gap-2 md:flex-row md:items-end md:justify-between">
+			<div className="flex flex-col items-center gap-2 md:items-start">
 				<Link
 					href="https://beto.codes/"
 					className="inline-block w-[50px]"
@@ -18,7 +18,7 @@ export default function Footer() {
 						alt="Beto's Logo"
 					/>
 				</Link>
-				<div className="hidden text-xs lg:block">©{year} beto carlos</div>
+				<div className="block text-xs">©{year} beto carlos</div>
 			</div>
 
 			<Link
