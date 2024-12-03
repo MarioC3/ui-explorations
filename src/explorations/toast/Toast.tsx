@@ -16,12 +16,12 @@ export default function Toast() {
 			<motion.div
 				layout
 				transition={{ type: 'spring', duration: 0.3, bounce: 0 }}
-				className="max-w-md space-y-4"
+				className="max-w-md space-y-6"
 			>
-				<div className="mx-auto max-w-sm text-pretty text-center text-xs text-neutral-400">
-					<p>
+				<div className="mx-auto max-w-md text-pretty text-center text-neutral-400">
+					<p className="font-serif">
 						Click on a variant button to render a Toast. <br /> You can also select the position where the
-						toast will renders.
+						toast will render.
 					</p>
 				</div>
 
