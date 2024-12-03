@@ -3,6 +3,7 @@ import '@styles/globals.css'
 import { ibmPlexMono, ovo } from '@/fonts'
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
 	title: 'UI Explorations',
@@ -16,11 +17,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body
-				className={`${ibmPlexMono.variable} ${ovo.variable} mx-auto flex max-w-3xl flex-col gap-20 bg-white px-4 py-16 font-sans text-neutral-900`}
-			>
-				<Header />
-				<main className="">{children}</main>
+			<body className={`${ibmPlexMono.variable} ${ovo.variable} bg-white font-sans text-neutral-900`}>
+				<div className="mx-auto flex min-h-screen max-w-3xl flex-col justify-end gap-20 px-4 py-16">
+					<Header />
+					<main className="flex-1">{children}</main>
+					<Footer />
+				</div>
 			</body>
 		</html>
 	)
